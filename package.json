@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "babel-core": "^6.22.1",
+    "babel-plugin-vdi": "^1.0.0",
     "nodescript-babylon": "^6.15.3"
   },
   "description": "NodeScript - JavaScript without the Variable Declarations and Semicolons",

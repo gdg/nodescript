@@ -5,7 +5,7 @@ let babel = require('babel-core')
 let fs = require('fs')
 
 
-let fileName = process.argv[1]
+let fileName = process.argv[2]
 
 fs.readFile(fileName,  'utf8', function (err, data) {
     if (err) { throw err }
