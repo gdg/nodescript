@@ -1,4 +1,4 @@
-NodeScript - JavaScript without the Variable Declarations and Semicolons
+## NodeScript - JavaScript without the Variable Declarations and Semicolons
 
 **In**
 
@@ -20,4 +20,10 @@ let x = 10;
 let y = 20;
 
 [x, y] = [y, x];
+```
+### Usage
+
+```
+$ npm install nodescript
+$ ./node_modules/.bin/nodescript script.ns
 ```
