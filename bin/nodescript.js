@@ -11,6 +11,6 @@ fs.readFile(fileName,  'utf8', function (err, data) {
     if (err) { throw err }
 
     let ast = babylon.parse(data, {plugins: ['si']}) // si: semicolon insertion
-    let newData = babel.transformFromAst(ast, data, {plugins: ['vdi']}).code // vdi: variable-declaration insertion
+    let newData = babel.transformFromAst(ast, data, {plugins: ['vdi'], sourceType: 'module'}).code // vdi: variable-declaration insertion
     console.log(newData)
 })
