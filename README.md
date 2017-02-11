@@ -21,3 +21,9 @@ let y = 20;
 
 [x, y] = [y, x];
 ```
+### Usage
+
+```
+$ npm install nodescript
+$ ./node_modules/.bin/nodescript script.ns
+```
