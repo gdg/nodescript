@@ -1,4 +1,4 @@
-NodeScript - JavaScript without the Variable Declarations and Semicolons
+## NodeScript - JavaScript without the Variable Declarations and Semicolons
 
 **In**
 
