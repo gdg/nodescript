@@ -7,7 +7,7 @@
 ### Installation
 
 ```
-$ npm install nodescript -g
+$ npm install -g nodescript
 ```
 ### Usage
 
