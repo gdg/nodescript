@@ -35,7 +35,7 @@ $ nodescript
 # Execute script.ns (WIP)
 $ nodescript script.ns
 
-# Print compiled script.ns
+# Print compiled script.ns (WIP)
 $ nodescript --print script.ns
 
 # Compile script.ns to script.js and watch for changes
