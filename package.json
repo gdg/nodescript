@@ -52,7 +52,7 @@
     "babel-plugin-vdi": "^1.0.0",
     "chokidar": "^1.6.1",
     "commander": "^2.9.0",
-    "nodescript-babylon": "^6.15.4",
+    "nodescript-babylon": "^6.15.5",
     "output-file-sync": "^1.1.2"
   },
   "description": "NodeScript - JavaScript without the Variable Declarations and Semicolons",
@@ -85,7 +85,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {
-    "plugins": ["vdi"]
+    "plugins": [
+      "vdi"
+    ]
   },
   "version": "0.1.6"
 }
