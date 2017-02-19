@@ -12,5 +12,35 @@ $ npm install nodescript -g
 ### Usage
 
 ```
+$ nodescript [options] [script.ns] [arguments]
+```
+
+### Options
+
+```
+-e, --eval          evaluate string
+-p, --print         print compiled file
+-o, --output        compile input file/directory into output file/directory
+-w, --watch         watch file/directory for changes
+
+-h, --help          print help message
+-V, --version       print version number
+```
+
+### Examples
+```
+# Open REPL (WIP)
+$ nodescript
+
+# Execute script.ns (WIP)
+$ nodescript script.ns
+
+# Print compiled script.ns
+$ nodescript --print script.ns
+
+# Compile script.ns to script.js and watch for changes
 $ nodescript --watch script.ns --output script.js
+
+# Compile src directory to lib directory and watch for changes
+$ nodescript --watch src --output lib
 ```
