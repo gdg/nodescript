@@ -11,7 +11,7 @@ const outputFileSync = require('output-file-sync')
 
 const vdi = __dirname === '/usr/lib/node_modules/nodescript/bin'
       ? path.join(__dirname, '../node_modules/babel-plugin-vdi')
-      : path.join(__dirname, '../../node_modules/babel-plugin-vdi')
+      : path.join(__dirname, '../../babel-plugin-vdi')
 
 
 function exists(pathname) { return fs.existsSync(pathname) }
