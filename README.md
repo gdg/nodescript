@@ -44,3 +44,9 @@ $ nodescript --watch script.ns --output script.js
 # Compile src directory to lib directory and watch for changes
 $ nodescript --watch src --output lib
 ```
+
+### Supported Operating Systems
+
+- Linux
+- ~~macOS~~ (WIP)  
+- ~~Windows~~ (WIP)
