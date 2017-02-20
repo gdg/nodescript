@@ -48,5 +48,5 @@ $ nodescript --watch src --output lib
 ### Supported Operating Systems
 
 - Linux
-- ~~macOS~~ (WIP)  
+- ~~macOS~~ (WIP)
 - ~~Windows~~ (WIP)
