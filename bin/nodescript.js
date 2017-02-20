@@ -9,6 +9,10 @@ const commander = require('commander')
 const packageInfo = require('../package.json')
 const outputFileSync = require('output-file-sync')
 
+const vdi = __dirname === '/usr/lib/node_modules/nodescript/bin'
+      ? path.join(__dirname, '../node_modules/babel-plugin-vdi')
+      : path.join(__dirname, '../../node_modules/babel-plugin-vdi')
+
 
 function exists(pathname) { return fs.existsSync(pathname) }
 
@@ -104,13 +108,12 @@ function parseArgs() {
 }
 
 
-
 function compile(input, output) {
     try {
         if (isFile(input)) {
             let inputData = fs.readFileSync(input, "utf8")
-            let inputAst = babylon.parse(inputData, {plugins: ['si'], sourceType: 'module'})      // semicolon insertion
-            let outputData = babel.transformFromAst(inputAst, inputData, {plugins: ['vdi']}).code // variable-declaration insertion
+            let inputAst = babylon.parse(inputData, {plugins: ['si'], sourceType: 'module'})     // semicolon insertion
+            let outputData = babel.transformFromAst(inputAst, inputData, {plugins: [vdi]}).code  // variable-declaration insertion
 
             outputFileSync(output, outputData)
             fs.chmodSync(output, fs.statSync(input).mode)
@@ -173,8 +176,6 @@ function main() {
 }
 
 
-
 if (require.main === module) {
     main()
 }
-
