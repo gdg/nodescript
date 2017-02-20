@@ -9,7 +9,6 @@ const commander = require('commander')
 const packageInfo = require('../package.json')
 const outputFileSync = require('output-file-sync')
 
-
 const vdi = __dirname.startsWith('/usr/') // globally-installed
       ? path.join(__dirname, '../node_modules/babel-plugin-vdi')
       : path.join(__dirname, '../../babel-plugin-vdi')
